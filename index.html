@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #f2f2f2;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js " defer></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-white">
+
+    <div class="container mx-auto">
+
+
+        <div class="navbar flex justify-between items-center md:mx-10 md:my-4 h-5 m-4">
+            <div class="burger flex md:order-2">
+                <div class="hamburger inline-block mx-3 cursor-pointer md:hidden ">
+                    <div class="h-0.5 w-6 my-1 bg-black"></div>
+                    <div class="h-0.5 w-6 my-1 bg-black"></div>
+                    <div class="h-0.5 w-6 my-1 bg-black"></div>
+                </div>
+                <div class="search my-auto">
+                    <img class="w-5 mx-1 md:hidden" src="./pic/search.png" alt="">
+                </div>
+            </div>
+
+            <div class="text-center flex md:order-1  justify-center items-center ml-4">
+                <img class="w-6" src="./pic/microsoft.png" alt="">
+                <p class="mb-1 ml-2 font-bold text-gray-500 text-xl">Microsoft</p>
+                <div class="feature">
+                    <div
+                        class="featureitem absolute w-fit md:w-auto inset-0 md:grid md:grid-cols-6 justify-between md:mx-5 md:space-x- -translate-x-96 md:translate-x-0 md:static">
+                        <div class="text-xs">Microsoft 365</div>
+                        <div class="text-xs">Terms</div>
+                        <div class="text-xs">Windows</div>
+                        <div class="text-xs"> Surface</div>
+                        <div class="text-xs">Xbox Support</div>
+                        <div class="text-xs">Support</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex md:order-3 justify-center items-center">
+                <div class="text-center flex mx-2  items-center">
+                    <p class="hidden mx-hidden md:block mx-2 text-[#7f7d7d] font-thin">search</p>
+                    <img class="hidden w-5 mx-hidden md:block " src="./pic/search.png" alt="">
+                </div>
+                <div class="text-center flex  mx-2  items-center">
+                    <p class=" hidden mx-hidden md:block mx-2 text-[#7f7d7d] font-thin">cart</p>
+                    <img class="w-5" src="./pic/shoppingcart.png" alt="">
+                </div>
+                <div class="text-center flex  mx-3 items-center">
+                    <p class=" hidden mx-hidden md:block mx-2 text-[#7f7d7d] font-thin">sign&nbsp;in</p>
+                    <img class="w-8" src="./pic/user-account.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="slider h-86 md:h-72 lg:h-96">
+            <div class="swiper mySwiper ">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide flex-col-reverse md:flex-row   ">
+                        <div class="">
+                            <h1 class="font-bold text-lg my-2 xl:text-7xl">Xbox Series X</h1>
+                            <p class="text-xs font-extralight mx-2 xl:text-lg">The Xbox Series X delivers sensationally
+                                smooth frame rates of up to 120FPS with the visual pop of HDR.</p>
+                            <button class="text-sm bg-[#005da5] text-white p-2 rounded-md my-2 xl:text-lg">Shop Xbox
+                                Series X</button>
+                        </div>
+                        <div>
+                            <img class=""
+                                src="https://assets.xboxservices.com/assets/af/2e/af2e6de5-7421-4f4b-a99b-1b067a1af382.jpg?n=10202018_Image-1084_Fam_1920x944.jpg"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide flex-col-reverse md:flex-row ">
+                        <div class="">
+                            <h1 class="font-bold text-lg my-2 xl:text-7xl">Microsoft 365</h1>
+                            <p class=" text-xs font-extralight mx-2 xl:text-lg">Turn your ideas into reality, stay safer
+                                online and off, and focus on what matters most with Microsoft 365 apps</p>
+                            <button class=" text-sm bg-[#005da5] text-white p-2 rounded-md my-2 xl:text-lg">For one
+                                person</button>
+                        </div>
+                        <div>
+                            <img class="" src="./pic/laptop.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex-col-reverse md:flex-row ">
+                        <div class="">
+                            <h1 class="font-bold text-lg my-2 xl:text-7xl">Windows 11</h1>
+                            <p class=" text-xs font-extralight mx-2 xl:text-lg">This is the best option for installing
+                                Windows 11 on the device you’re currently using. Click Download Now to get started.</p>
+                            <button class=" text-sm bg-[#005da5] text-white p-2 rounded-md my-2 xl:text-lg">Download
+                                Now</button>
+                        </div>
+                        <div>
+                            <img class="" src="https://cdn.mos.cms.futurecdn.net/uPALkW3UzvgE6FhMy3nCzD.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+
+            <div class="promo mx-5 my-5 space-y-5 flex flex-col md:flex-row md:justify-center md:items-center">
+                <div class="mt-5 item flex items-center md:flex-col ">
+                    <img src="./pic/blackwindow.png" alt="">
+                    <span class=" font-bold mx-3 md:mt-3 md:mx-5">Choose your Microsoft 365</span>
+                </div>
+
+                <div class="item flex items-center md:flex-col">
+                    <img src="./pic/tablet.png" alt="">
+                    <span class="font-bold mx-3 md:mt-3 md:mx-5">Explore Surface devices</span>
+                </div>
+
+                <div class="item flex items-center md:flex-col">
+                    <img src="./pic/xbox.png" alt="">
+                    <span class="font-bold mx-3 md:mt-3 md:mx-5">Buy Xbox games</span>
+                </div>
+
+                <div class="item flex items-center md:flex-col">
+                    <img src="./pic/blackwindow.png" alt="">
+                    <span class="font-bold mx-3 md:mt-3 md:mx-5">Get Windows 11</span>
+                </div>
+            </div>
+
+
+            <div class="laptop p-2 md:grid md:grid-cols-2 lg:grid-cols-4 md:p-2">
+
+                <div class="justify-center items-center mt-5 md:mr-3">
+                    <img
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-5-M1-Platinum-01-1?wid=380&hei=213&fit=crop"
+                        alt="">
+                    <button class="bg-[#ffb900] text-lg p-1 m-2 rounded-sm">NEW</button>
+                    <h1 class="text-lg  ml-2 mt-1 font-bold text-lg">Surface Laptop 5</h1>
+                    <p class="ml-2 font-thin text-sm">Sophisticated style and multitasking speed powered by 12th Gen
+                        Intel® Core, with Windows 11.</p>
+                    <p class="ml-2 mt-2 font-bold text-lg text-[#005da5]">Learn more ></p>
+                </div>
+
+                <div class="justify-center items-center mt-5 md:mr-3 ">
+                    <img 
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Studio-01-CP?wid=380&hei=213&fit=crop"
+                        alt="">
+                    <button class="bg-[#ffb900] text-lg p-1 m-2 rounded-sm">NEW</button>
+                    <h1 class="text-lg  ml-2 mt-1 font-bold text-lg">Surface Laptop Studio</h1>
+                    <p class="ml-2 font-thin text-sm">Flex your creative muscle on the most powerful Surface Laptop. Now
+                        available with Windows 11.</p>
+                    <p class="ml-2 mt-2 font-bold text-lg text-[#005da5]">Learn more ></p>
+                </div>
+
+                <div class="justify-center items-center mt-5 md:mr-3">
+                    <img 
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-9-M1-Platinum-02-1?wid=380&hei=213&fit=crop"
+                        alt="">
+                    <button class="bg-[#ffb900] text-lg p-1 m-2 rounded-sm">NEW</button>
+                    <h1 class="text-lg  ml-2 mt-1 font-bold text-lg">Surface Pro 9</h1>
+                    <p class="ml-2 font-thin text-sm">The tablet flexibility you want and the laptop performance you
+                        need — all in one ultra-portable device.</p>
+                    <p class="ml-2 mt-2 font-bold text-lg text-[#005da5]">Learn more ></p>
+                </div>
+
+                <div class="justify-center items-center mt-5 md:mr-3">
+                    <img 
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Bing-AI-No-Text?wid=380&hei=213&fit=crop"
+                        alt="">
+                    <button class="bg-[#ffb900] text-lg p-1 m-2 rounded-sm">NEW</button>
+                    <h1 class="text-lg  ml-2 mt-1 font-bold text-lg">Introducing the new Bing</h1>
+                    <p class="ml-2 font-thin text-sm">Your AI-powered copilot for the web. Ask questions. Chat to refine
+                        results. Get comprehensive answers and creative inspiration.</p>
+                    <p class="ml-2 mt-2 font-bold text-lg text-[#005da5]">Join the Bing preview ></p>
+                </div>
+
+            </div>
+
+            <div class=" banner mx-2 space-y-3 bg-[#88bbdd] md:bg-white md:flex md:items-center mt-5">
+                <div class="">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-AEM-Minecraft-Legends-2023:VP5-1596x600"
+                        alt="">
+                </div>
+
+                <div class=" p-2 md:absolute md:w-1/3 md:bg-white md:p-5 mx-10 xl:p-12 ">
+                    <h1 class="font-bold text-lg ml-2 xl:text-3xl">Unite the Overworld in Minecraft Legends</h1>
+                    <p class="font-thin text-sm ml-2 mt-2 xl:text-lg">Explore lush biomes, make alliances with new
+                        friends and familiar mobs, then face the piglins in epic battles. But be warned—they always
+                        fight back.</p>
+                    <button class="bg-[#005da5] rounded-sm text-white p-2 text-sm text-xs ml-2 mt-2">Get Minecraft
+                        Legends now</button>
+                </div>
+            </div>
+
+            <h1 class="mx-2 mt-10 mb-5 text-2xl font-bold">For business</h1>
+
+
+            <div class="laptop p-2 md:grid md:grid-cols-2 lg:grid-cols-4 md:p-2">
+
+                <div class="justify-center items-center mt-5 md:mr-3">
+                    <img 
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Family-2022-M2-1?wid=380&hei=213&fit=crop"
+                        alt="">
+                    <button class="bg-[#ffb900] text-lg p-1 m-2 rounded-sm">NEW</button>
+                    <h1 class="text-lg  ml-2 mt-1 font-bold text-lg">Surface for Business Family</h1>
+                    <p class="ml-2 font-thin text-sm">Surface for Business devices enable work on your team's terms with
+                        flexibility, built-in security and the power they need to succeed.</p>
+                    <p class="ml-2 mt-2 font-bold text-lg text-[#005da5]">Learn more ></p>
+                </div>
+
+                <div class="justify-center items-center mt-5 md:mr-3 ">
+                    <img 
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-For-Business-Woman-Teams-Call?wid=380&hei=213&fit=crop"
+                        alt="">
+                    <button class="bg-[#ffb900] text-lg p-1 m-2 rounded-sm">NEW</button>
+                    <h1 class="text-lg  ml-2 mt-1 font-bold text-lg">Try Microsoft 365 for free</h1>
+                    <p class="ml-2 font-thin text-sm">Get Microsoft Teams, secure cloud storage and premium apps across
+                        devices with a free one-month Microsoft 365 Business Standard trial.</p>
+                    <p class="ml-2 mt-2 font-bold text-lg text-[#005da5]">Start your free trial ></p>
+                </div>
+
+                <div class="justify-center items-center mt-5 md:mr-3">
+                    <img 
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Brand-Hybrid-Work?wid=380&hei=213&fit=crop"
+                        alt="">
+                    <button class="bg-[#ffb900] text-lg p-1 m-2 rounded-sm">NEW</button>
+                    <h1 class="text-lg  ml-2 mt-1 font-bold text-lg">Thrive in a hybrid world</h1>
+                    <p class="ml-2 font-thin text-sm">Discover tools, resources and strategies to help your employees
+                        succeed in the new world of flexible work.</p>
+                    <p class="ml-2 mt-2 font-bold text-lg text-[#005da5]">Learn more ></p>
+                </div>
+
+                <div class="justify-center items-center mt-5 md:mr-3">
+                    <img 
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Visual-Studio-Icon?wid=380&hei=213&fit=crop"
+                        alt="">
+                    <button class="bg-[#ffb900] text-lg p-1 m-2 rounded-sm">NEW</button>
+                    <h1 class="text-lg  ml-2 mt-1 font-bold text-lg">Visual Studio 2022</h1>
+                    <p class="ml-2 font-thin text-sm">Get the most comprehensive IDE for .NET and C++ developers on
+                        Windows for building web, cloud, desktop, mobile apps, services and games.</p>
+                    <p class="ml-2 mt-2 font-bold text-lg text-[#005da5]">Download Visual Studio 2022 ></p>
+                </div>
+
+            </div>
+
+
+
+            <div class=" banner mx-2 space-y-3 bg-[#88bbdd] md:bg-white md:flex md:items-center mt-5">
+                <div class="">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Slim-Multi-Canvas-Microsoft-Sustainability-Jungle-Earth-Day-FY23:VP5-1596x600"
+                        alt="">
+                </div>
+
+                <div class=" p-2 md:absolute md:w-1/3 md:bg-white md:p-5 mx-10 xl:p-12 ">
+                    <h1 class="font-bold text-lg ml-2 xl:text-3xl">For Earth Day and every day</h1>
+                    <p class="font-thin text-sm ml-2 mt-2 xl:text-lg">This April, we celebrate the boundary pushing and
+                        innovation that helps to create a brighter, cleaner, more sustainable future for us all</p>
+                    <button class="bg-[#005da5] rounded-sm text-white p-2 text-sm text-xs ml-2 mt-2"> Learn
+                        more</button>
+                </div>
+            </div>
+
+            <div class="flex items-center ml-2 mt-8 mb-8">
+                <h1 class="text-lg ">For business: </h1>
+                <img class="h-8 mr-2"
+                    src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Facebook%202x?scl=1" alt="">
+                <img class="h-8 mr-2"
+                    src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Twitter%202x?scl=1" alt="">
+                <img class="h-8 mr-2"
+                    src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/YouTube%202x?scl=1" alt="">
+            </div>
+
+
+            <div class="bg-[#f2f2f2] p-5 md:grid md:grid-cols-3 xl:grid-cols-6">
+                <div class="mx-3 space-y-4 mt-10">
+                    <h1 class="text-[#545050] font-bold text-lg ">What's new</h1>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft 365</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Games</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Surface Pro 9</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Surface Laptop 5</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Surface Laptop Studio</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Surface Laptop Go 2</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Windows 11 apps</p>
+                </div>
+
+                <div class="mx-3 space-y-4 mt-10">
+                    <h1 class="text-[#545050] font-bold text-lg ">Microsoft Store</h1>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Account profile</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Download Center</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Store Support</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Returns</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Order tracking</p>
+                </div>
+
+                <div class="mx-3 space-y-4 mt-10">
+                    <h1 class="text-[#545050] font-bold text-lg ">Education</h1>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft in education</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Devices for education</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Teams for Education</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft 365 Education</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Office Education</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Office Education</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Deals for students and parents</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Azure for students</p>
+                </div>
+
+                <div class="mx-3 space-y-4 mt-10">
+                    <h1 class="text-[#545050] font-bold text-lg ">Business</h1>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Cloud</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Security</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Azure</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Dynamics 365</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft 365</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Advertising</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Industry</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Teams</p>
+                </div>
+
+                <div class="mx-3 space-y-4 mt-10">
+                    <h1 class="text-[#545050] font-bold text-lg ">Developer & IT</h1>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Developer Center</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Documentation</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Learn</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Tech Community</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Azure Marketplace</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">AppSource</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Microsoft Power Platform</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Visual Studio</p>
+                </div>
+
+                <div class="mx-3 space-y-4 mt-10">
+                    <h1 class="text-[#545050] font-bold text-lg ">Company</h1>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Careers</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">About Microsoft</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Company news</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Privacy at Microsoft</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Investors</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Security</p>
+                    <p class="text-[#4c4c4c] cursor-pointer hover:underline">Sustainability</p>
+                </div>
+
+                <div class="mx-3 mt-10">
+                    <div class=" items-center flex space-x-5 mb-8">
+                        <img class="w-8 h-8" src="./pic/earth.png" alt="">
+                        <p class="text-[#4c4c4c] cursor-pointer hover:underline">English (India)</p>
+                    </div>
+                        <div class="space-y-5 ">
+                            <h1 class="hover:underline text-xs font-extralight">Contact Microsoft</h1>
+                            <h1 class="hover:underline text-xs font-extralight">Privacy</h1>
+                            <h1 class="hover:underline text-xs font-extralight">Terms of use</h1>
+                            <h1 class="hover:underline text-xs font-extralight">Trademarks</h1>
+                            <h1 class="hover:underline text-xs font-extralight">About our ads</h1>
+                            <h1 class="hover:underline text-xs font-extralight">© Microsoft 2023</h1>
+                        </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
